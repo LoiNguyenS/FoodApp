@@ -1,0 +1,7 @@
+<a href="{% url 'foods' %}"> Go back </a>
+<h3> Food Form</h3>
+<form method="POST" action="">
+	{% csrf_token %}
+	{{form.as_p}}
+	<input type="submit" value="Submit">
+</form>
